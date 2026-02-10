@@ -2,7 +2,8 @@ h1{
     color: orange;
     background-color: azure;
     font-size: 40px;
-    text-decoration: underline;
+    text-decoration: underline; /* it can be set to none, underline, overline, line-through, or a combination of these values.
+    and it is assigned to none for example with the anchor tag as it automatically given underline */
     font-family: arial;
     text-align: center;
 }
@@ -12,16 +13,40 @@ p{
     line-height: 30px;
     letter-spacing: 1px;
     column-count: 3;
+     /* it is used to specify the number of columns in a multi-column layout. 
+    It allows you to divide the content of an element into multiple columns, 
+    similar to how text is formatted in a newspaper or magazine. */
     column-gap: 60px;
 }
 
 ul{
-    border-bottom: 4px solid cornflowerblue;
+     /*border-width: 4px;
+    border-color: red;  i need at least border-width and border-color to make the border appear 
+    border-style: solid;*/
+
+    /*border: 4px solid red;*/
+    /* it is a shorthand property that allows you to set the width, style, and color of an element's border in a single declaration.
+    The first value (4px) sets the width of the border, the second value (solid) sets the style of the border, and the third value (red) sets the color of the border. */
+
+ border-bottom: 4px solid red; 
+    /* it is used to set the width, style, and color of the bottom border of an element.
+    The first value (4px) sets the width of the border, the second value (solid) sets the style of the border, 
+    and the third value (red) sets the color of the border. */
+    border-left: 2px dashed black;
 }
 
 li{
     list-style-type: square ;
+    /* it is used to specify the type of list item marker for unordered lists. It can be set to various values such as disc, circle, square, or none.
+    In this case, it is set to square, which will display square-shaped markers for each list item. 
+    and we can make it none to remove them*/
+    /* text-shadow: 2px 2px 5px lightgray;  */
+    /* it is used to add a shadow effect to text. It takes several values that define the properties of the shadow, including the horizontal and vertical offsets,
+    the blur radius, and the color of the shadow.*/
+
     text-shadow: 1px 1px #7c91d8;
+    /* it is used to add a shadow effect to text. It takes several values that define the properties of the shadow, including the horizontal and vertical offsets,
+    the blur radius, and the color of the shadow.*/
 }
 
 span{
