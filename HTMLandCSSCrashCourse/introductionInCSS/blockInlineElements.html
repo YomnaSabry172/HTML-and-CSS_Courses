@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <!-- Page title shown in the browser tab -->
         <title>CSS basics</title>
-    </head>
-    <body>
-        <h2>Inline Elements</h2>
-        <span>span tag</span>
-        <em>em tag</em>
-        <a href="">anchor tag</a>
 
-        <h2>Block level elements</h2>
+        <!-- Connect this HTML file to the external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Inline elements: stay in the same line unless space runs out -->
+        <!--
+            Margin note:
+            Block elements can have margins all the way around (top, right, bottom, left).
+            Inline elements can have margins only on the right/left in normal flow.
+        -->
+        <h2>inline element</h2>
+        <span>span tag</span>
+        <em>emphasis tag</em>
+        <a href="">anchor tag</a>
+        <span>span tag</span>
+
+        <!-- Block elements: each starts on a new line -->
+        <!-- Block elements can use full box spacing, so vertical margins work as expected. -->
+        <h2>block element</h2>
         <div>div tag</div>
+        <div>div tag2</div>
+        <div>div tag3</div>
         <h3>h3 tag</h3>
         <p>paragraph tag</p>
+
+        <!-- Unordered list: bullet-style list items -->
         <ul>
-            <li>first element of list</li>
-            <li>second element of list</li>
+            <li>unordered list item 1</li>
+            <li>unordered list item 2</li>
         </ul>
 
-        
+        <!-- Ordered list: numbered list items -->
+        <ol>
+            <li>ordered list item 1</li>
+            <li>ordered list item 2</li>
+        </ol>
     </body>
 </html>
-
-<!-- 
-    Block elements can have margins all the way arround
-    Inline elements can have margins only on the right/left
--->
